@@ -1,0 +1,329 @@
+#include"ioap123.h"
+#include <unistd.h>
+
+
+void initialisation (int LgnTab, int ColTab,int** Tab1, int** Tab2)
+{
+  int x,y;
+  
+  for(y=0;y<LgnTab;y++)
+    {
+      for(x=0;x<ColTab;x++)
+	{
+	  Tab1[y][x]=0;
+	  Tab2[y][x]=0;
+	}
+    }
+}
+
+
+
+
+void affiche (int LgnTab, int ColTab,int** Tab1)
+{
+  int y,x;
+
+ 
+
+  for(y=0;y<LgnTab;y++)
+    {
+      
+     
+      print_char('|');
+      
+      for(x=0;x<ColTab;x++)
+	{
+	  if(Tab1[y][x]==1)
+	    print_char('*');
+	  else
+	    print_char(' ');
+	  
+	  print_char('|');
+	}
+      print_newline();
+     
+    }
+}
+  
+
+
+
+
+
+
+
+void generation (int LgnTab, int ColTab,int** Tab1, int** Tab2)
+{
+  int x=0,y=0;
+
+
+  print_text("Bienvenue dans le systeme d'aide à la création de cellule :\n\n");
+
+  print_text("voulez vous creer un clown ? 1=oui, 2=non:");
+
+  x=read_int();
+
+  if( x==1)
+    {
+      Tab1[14][14]=1;
+      Tab2[14][14]=1;
+      Tab1[13][14]=1;
+      Tab2[13][14]=1;
+      Tab1[12][14]=1;
+      Tab2[12][14]=1;     
+      Tab1[14][15]=1;
+      Tab2[14][15]=1;     
+      Tab1[14][16]=1;
+      Tab2[14][16]=1;    
+      Tab1[13][16]=1;
+      Tab2[13][16]=1;     
+      Tab1[12][16]=1;
+      Tab2[12][16]=1;
+    }
+
+else{
+  print_text("Veuillez indiquez à quelle position vous souhaitez inserer des cellules vivantes. (tapez x=666 pour terminer) \n\n");
+    
+
+  
+  while(x!=666)
+    {
+      print_text("x= ? :");
+      print_int(1);
+      print_char('/');
+      print_int(ColTab);
+      print_text("  :");
+      x=read_int();
+
+      print_newline();
+      print_text("y= ? :");
+      print_int(1);
+      print_char('/');
+      print_int(LgnTab);
+      print_text("  :");
+      y=read_int();
+      print_text("\n\n");
+      if(x==666){;}
+      else
+
+      if(Tab1[y-1][x-1]==0)
+	{
+	  Tab1[y-1][x-1]=1;
+	  Tab2[y-1][x-1]=1;
+	}
+      else
+	{
+	  Tab1[y-1][x-1]=0;
+	  Tab2[y-1][x-1]=0;
+	}
+    }
+
+
+      affiche (LgnTab,ColTab,Tab1);
+      print_text("\n\n");
+    }
+}
+
+int voisinage(int x,int y, int LgnTab, int ColTab, int** tab)
+{
+  int l,c,cptvoisin=0; //l pour ligne et collone pour hauteur
+
+  if((x>0) && (y>0) && (x<LgnTab-1) && (y<ColTab-1))// cas général
+    {
+      for(l=y-1;l<=y+1;l++)
+	{
+	  for(c=x-1;c<=x+1;c++)
+	    {
+	      if(tab[l][c]==1)
+		cptvoisin++;
+	    }
+	}
+      if (tab[y][x]==0)
+	return cptvoisin;
+      else
+	return cptvoisin-1;
+    }
+  
+  else  if(x==0)//quand on est sur la cote gauche
+    {
+      if(tab[y][x+1]==1)
+	cptvoisin++;
+      
+      if(y>0)//mais pas sur le bord du haut
+	{
+	  if(tab[y-1][x]==1)
+	    cptvoisin++;
+	  if(tab[y-1][x+1]==1)
+	    cptvoisin++;
+	}
+      if(y<LgnTab-1)//mais pas sur le bord du bas
+	{
+	  if(tab[y+1][x+1]==1)
+	    cptvoisin++;
+	  if(tab[y+1][x]==1)
+	    cptvoisin++;
+	}
+    }
+  
+  
+  
+  
+  
+  
+  else if(x==ColTab-1)//quand on est sur la cote droit
+    {
+      if(tab[y][x-1]==1)
+	cptvoisin++;
+      
+      if(y>0)//mais pas sur le bord du haut
+	{
+	  if(tab[y-1][x]==1)
+	    cptvoisin++;
+	  if(tab[y-1][x-1]==1)
+	    cptvoisin++;
+	}
+      if(y<LgnTab-1)//mais pas sur le bord du bas
+	{
+	  if(tab[y+1][x-1]==1)
+	    cptvoisin++;
+	  if(tab[y+1][x]==1)
+	    cptvoisin++;
+	}
+    }
+  
+ else if(y==0)//quand on est sur le bord du haut
+   {
+     if(tab[y+1][x]==1)
+       cptvoisin++;
+     
+     if(x>0)//mais pas sur le bord de gauche
+	{
+	  if(tab[y][x-1]==1)
+	    cptvoisin++;
+	  if(tab[y+1][x-1]==1)
+	    cptvoisin++;
+	}
+     if(x<ColTab-1)//mais pas sur le bord de droite
+       {
+	 if(tab[y][x+1]==1)
+	   cptvoisin++;
+	 if(tab[y+1][x+1]==1)
+	   cptvoisin++;
+       }
+   }
+  
+ else//quand on est sur le bord du bas
+   {
+     if(tab[y-1][x]==1)
+       cptvoisin++;
+     
+     if(x>0)//mais pas sur le bord de gauche
+       {
+	 if(tab[y][x-1]==1)
+	   cptvoisin++;
+	 if(tab[y-1][x-1]==1)
+	   cptvoisin++;
+       }
+     if(x<ColTab-1)//mais pas sur le bord de droite
+       {
+	 if(tab[y][x+1]==1)
+	   cptvoisin++;
+	 if(tab[y-1][x+1]==1)
+	   cptvoisin++;
+       }
+   }
+  return cptvoisin;
+}
+
+
+
+void generation_suivante(int LgnTab, int ColTab, int** TabTest, int** TabResu)
+{
+  int i,j,test;
+
+
+
+  for(j=0;j<LgnTab;j++)
+    {
+      for(i=0;i<ColTab;i++)
+	{
+	  test=voisinage(i,j,LgnTab,ColTab,TabTest);
+	  if(TabTest[j][i]==1)
+	    {
+	      if(test<2 || test>3)
+		TabResu[j][i]=0;
+	    }
+	  else if(test==3)
+	    TabResu[j][i]=1; 
+	}
+    }
+
+  
+  for(j=0;j<LgnTab;j++)
+    {
+      for(i=0;i<ColTab;i++)
+	{
+	  TabTest[j][i]=TabResu[j][i];
+	 
+	}
+      //ca bloque apré ca
+    }
+  //ca bloque ici
+}
+
+
+
+
+int main ()
+{
+  int ColTab,LgnTab;
+  int ** Tab_Actu;
+  int ** Tab_Apre;
+  int CptL;
+  int x,y;
+ 
+  
+ 
+  print_text("Taille de la surface de jeu ? ( nb colonne puis nombre de ligne...)\n");
+  print_text("Quelle longueur de damier souhaitez vous utiliser ?: "); 
+  ColTab=read_int();
+  print_text("Quelle largeur ? : ");
+  LgnTab=read_int();
+  print_text("\n\n\n");
+  
+  Tab_Actu=malloc(LgnTab * sizeof(int));
+  Tab_Apre=malloc(LgnTab * sizeof(int));
+  
+  for(CptL=0;CptL<LgnTab;CptL++)
+    {
+      Tab_Actu[CptL]=malloc(ColTab * sizeof(int));
+      Tab_Apre[CptL]=malloc(ColTab * sizeof(int));
+    }
+
+
+  initialisation (LgnTab,ColTab,Tab_Actu,Tab_Apre);
+  generation (LgnTab,ColTab,Tab_Actu,Tab_Apre);
+
+  print_newline();
+  print_text("combien de génération voulez vous créer ? : ");
+  x=read_int();
+  print_text("\n\n");
+  affiche(LgnTab,ColTab,Tab_Actu);
+  print_text("\n\n");
+
+  for(y=1;y<x;y++)
+    {
+      generation_suivante(LgnTab,ColTab,Tab_Actu,Tab_Apre);
+      sleep(1);
+      print_text("Generation");
+      print_int(y+1);
+      print_newline();    
+      affiche(LgnTab,ColTab,Tab_Actu);
+      print_text("\n\n");
+    }
+      
+
+  return 0;
+}
+
+      

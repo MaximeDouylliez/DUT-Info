@@ -1,0 +1,37 @@
+#include "ioap123.h"
+
+struct mpiece{
+  int pdeux;
+  int pun;
+  int pcinquante;
+  int pvingt;
+  int pdix;
+  int pcinq;
+  int punc;
+};
+
+typedef struct mpiece piece;
+
+int nbfois(double monnaie,double typepiece){
+  int cpt=0;
+  double reste;
+
+  while (monnaie > typepiece){
+    reste=monnaie-typepiece;
+    cpt=cpt+1;}
+
+  return cpt;
+}
+
+double somme_a_rendre(int somme_versee, int somme_du){
+  double sommearendre;
+  sommearendre=somme_versee-somme_du;
+  return sommearendre;
+}
+
+piece piece_a_rendre(double sommearendre){
+  piece nbpiece;
+  double sommelol;
+  nbpiece.pdeux=nbfois(sommearendre,2.0);
+sommelol=
+}

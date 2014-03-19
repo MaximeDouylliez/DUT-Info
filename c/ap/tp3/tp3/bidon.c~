@@ -1,0 +1,22 @@
+#include "ioap123.h"
+
+
+
+
+int conversion(text aconvertir){
+  int arenvoyer;
+return  arenvoyer=atoi(aconvertir);}
+
+bool verif( text temp){
+  return temp[1]=='\0';}
+
+int main(){
+  text caca;
+  int sol;
+  bool boo;
+  caca=read_line();
+  if (verif(caca)==true){
+  sol=conversion(caca);
+  print_int(sol);}
+  else print_text("nananananananannanan noob");
+  return 0;}

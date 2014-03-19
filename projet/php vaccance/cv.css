@@ -1,0 +1,20 @@
+div{font-size:15px;}
+
+h1{color:purple;
+   text-align:center;
+   font-size:20px;}
+
+.droite{text-align:right;}
+
+.ue{text-align:center;
+    font-size:20px;
+    color:purple}
+
+td{ text-align:center;
+    border-style:inset;
+    border-width:5px;
+    border-color:green;}
+
+.val{border-style:outset;
+     border-width:5px;
+     border-color:red;}

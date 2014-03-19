@@ -1,0 +1,9 @@
+Analyseur d'expression mathématique avec variable :
+
+ex : [identifiant] = [expression];;
+
+retour : identifiant calculé
+
++parenthèse, nombre décimales et négatifs
+
+Utilisation des arbres

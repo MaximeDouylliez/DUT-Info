@@ -1,0 +1,12 @@
+exemple 
+import java.util.date .app.activity os.budnel view.Wiew widget.Button
+
+on create on start on resume  on pause on stop on destroy
+
+check box
+
+<CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/check"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android: text="";

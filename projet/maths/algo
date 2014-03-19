@@ -1,0 +1,50 @@
+calcul de fraction irréductible:
+
+soit frac1 et frac2 deux fraction entré par l'utilisateur: 
+
+
+si deno commun                         //addition
+	alors
+	resultat.nume= somme des num
+	resultat.deno=frac1.nume
+	renvoyer resultat
+
+sinon
+	frac1.nume=mult du num1 et den2              //toujours addition et partie unique pour la multiplication
+	frac2.nume=mult du num2 et den1
+        resultat.nume= somme des numerateurs
+	resultat=mult des den
+
+Rendre irreductible 
+
+diviser par pgcd
+
+
+calcul pgcd
+
+tant que den different de 0
+	reste= division modulo de num sur den
+	num =den
+	den=r
+
+
+renvoyer a
+
+
+
+
+
+nature d'un triangle
+soit les point a b et c
+
+si distance ab= ac ou ab=bc ou ac=bc
+	alors si ab=ac=bc triangle equilateral
+	sinon triangle isocele
+
+sinon si ab² = ac² + bc²    ou  ac² = ab²+bc² ou bc² = ab² + ac²   -+> rectangle
+
+sinon quelququonque
+
+
+
+

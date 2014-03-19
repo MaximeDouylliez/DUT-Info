@@ -1,0 +1,21 @@
+#include"ioap123.h"
+#include <assert.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include "data.h"
+typedef struct cell { 
+  candidat val; 
+  struct cell * fg;
+  struct cell * fd;
+} * arbre;
+
+ const list emptylist;
+
+ list cons(candidat val, list l);
+mot  head(arbre l); 
+arbre tail(list l);
+ get(list l);
+void aff_all(list l);
+
+

@@ -1,0 +1,26 @@
+#include "ioap123.h"
+#include "stdio.h"
+
+void init_grille(char **grille,int dim){
+  int i,j;
+
+  for(j=0;j<dim;j++){
+    for(i=0;i<dim;i++){
+      tab[i][j]=' ';
+    }}}
+
+void affiche_grille(char **grille,int dim){
+  int i,j;
+
+  for(j=0;j<dim;j++){
+    for(i=0;i<dim;i++){
+    print_char('|'):
+    }
+    print_newline();
+  }
+}
+
+
+
+int main(){
+

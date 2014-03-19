@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=State()
+comment1.params=
+comment1.target=void\ setFirst()
+comment2.params=
+comment2.target=void\ setOp()
+comment3.params=
+comment3.target=void\ setSecond()
+comment4.params=
+comment4.target=java.lang.Boolean\ isFirst()
+comment5.params=
+comment5.target=java.lang.Boolean\ isSec()
+comment6.params=
+comment6.target=java.lang.Boolean\ isWaiting()
+numComments=7

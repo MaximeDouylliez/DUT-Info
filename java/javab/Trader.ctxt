@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Trader()
+comment1.params=mot
+comment1.target=void\ setMise(java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getMise()
+comment3.params=l
+comment3.target=void\ addPropertyChangeListener(java.beans.PropertyChangeListener)
+comment4.params=l
+comment4.target=void\ removePropertyChangeListener(java.beans.PropertyChangeListener)
+comment5.params=l
+comment5.target=void\ addVetoableChangeListener(java.beans.VetoableChangeListener)
+comment6.params=l
+comment6.target=void\ removeVetoableChangeListener(java.beans.VetoableChangeListener)
+numComments=7

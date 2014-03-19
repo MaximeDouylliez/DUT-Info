@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=p
+comment0.target=Frame(Partie)
+comment1.params=
+comment1.target=int\ geX()
+comment2.params=
+comment2.target=int\ geY()
+comment3.params=e
+comment3.target=void\ mouseClicked(java.awt.event.MouseEvent)
+comment3.text=point\n\ \n\ \ \ \ \ \ \ \ \ \ if((c1\ \=\=\ true\ &&\ c2\ \=\=\ true\ &&\ c3)\ \ ||\ (c4\ \=\=\ true\ &&\ c5\ \=\=\ true\ &&\ c6)\ \ ||(c7\ \=\=\ true\ &&\ c8\ \=\=\ true\ &&\ c9)\ \ ||(c1\ \=\=\ true\ &&\ c4\ \=\=\ true\ &&\ c7)\ \n\ \ \ \ \ \ \ \ \ \ \ \ \ \ ||(c2\ \=\=\ true\ &&\ c5\ \=\=\ true\ &&\ c8)\ \ ||(c3\ \=\=\ true\ &&\ c6\ \=\=\ true\ &&\ c9)\ \ ||(c1\ \=\=\ true\ &&\ c5\ \=\=\ true\ &&\ c9)\ \ ||(c7\ \=\=\ true\ &&\ c5\ \=\=\ true\ &&\ c3)\ ){\n\ \ \ \ \ \n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ victoire\ rond;\ \ \ \ \ \n\ \ \ \ \ \ \ \ \ \ }\n\ \ \ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ \ \ if((r1\ \=\=\ true\ &&\ r2\ \=\=\ true\ &&\ r3)\ \ ||\ (r4\ \=\=\ true\ &&\ r5\ \=\=\ true\ &&\ r6)\ \ ||(r7\ \=\=\ true\ &&\ r8\ \=\=\ true\ &&\ r9)\ \ ||(r1\ \=\=\ true\ &&\ r4\ \=\=\ true\ &&\ r7)\ \n\ \ \ \ \ \ \ \ \ \ \ \ \ \ ||(r2\ \=\=\ true\ &&\ r5\ \=\=\ true\ &&\ r8)\ \ ||(r3\ \=\=\ true\ &&\ r6\ \=\=\ true\ &&\ r9)\ \ ||(r1\ \=\=\ true\ &&\ r5\ \=\=\ true\ &&\ r9)\ \ ||(r7\ \=\=\ true\ &&\ r5\ \=\=\ true\ &&\ r3)\ ){\n\ \ \ \ \ \n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ victoire\ croix;\ \ \ \ \ \n\ \ \ \ \ \ \ \ \ \ }\n\ \n
+comment4.params=e
+comment4.target=void\ mouseEntered(java.awt.event.MouseEvent)
+comment5.params=e
+comment5.target=void\ mousePressed(java.awt.event.MouseEvent)
+comment6.params=e
+comment6.target=void\ mouseReleased(java.awt.event.MouseEvent)
+comment7.params=e
+comment7.target=void\ mouseExited(java.awt.event.MouseEvent)
+numComments=8

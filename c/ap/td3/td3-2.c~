@@ -1,0 +1,9 @@
+bool is_empty(file f){
+return tail(f->next)==emptylist;
+}
+
+file
+elt val
+int priorité
+struct cell * next;
+} *file

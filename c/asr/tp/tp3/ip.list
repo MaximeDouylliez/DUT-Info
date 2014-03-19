@@ -1,0 +1,15 @@
+PING 193.50.192.166 (193.50.192.166) 56(84) bytes of data.
+
+--- 193.50.192.166 ping statistics ---
+32 packets transmitted, 0 received, 100% packet loss, time 30999ms
+
+PING 193.50.192.178 (193.50.192.178) 56(84) bytes of data.
+
+--- 193.50.192.178 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+PING 193.50.192.37 (193.50.192.37) 56(84) bytes of data.
+
+--- 193.50.192.37 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+

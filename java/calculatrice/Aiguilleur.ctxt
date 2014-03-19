@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=a
+comment0.target=Aiguilleur(Skin)
+comment1.params=
+comment1.target=void\ refresh()
+comment2.params=val
+comment2.target=void\ ajouterVal(int)
+comment3.params=c
+comment3.target=void\ ajouterOp(java.lang.String)
+comment4.params=s
+comment4.target=void\ effectuerOptn(java.lang.String)
+comment5.params=
+comment5.target=void\ calcul()
+comment6.params=
+comment6.target=void\ lancerCalculRapide()
+numComments=7

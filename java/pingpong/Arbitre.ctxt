@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Arbitre()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Arbitre\n
+comment1.params=
+comment1.target=void\ point_ping()
+comment2.params=
+comment2.target=void\ point_pong()
+comment3.params=
+comment3.target=void\ lecture()
+comment4.params=
+comment4.target=void\ main()
+numComments=5

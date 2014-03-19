@@ -1,0 +1,52 @@
+La composition du groupe :
+
+Quand on nous a proposé de faire un projet nous nous demandions comment choisir un groupe. Nous somme depuis peu en DUT, on ne connait personne et on ne se doute pas un instant qu'il pourrait y avoir autant de "portés disparus". Il falait faire un choix ou le laisser à notre tutrice de projet et ce fut les deux dans notre cas. Le groupe s'est formé avec :
+Poivret guillaume, TRES motivé en début d'année, 
+Stephen Laurence, discret mais efficace,
+Vasseux nicolas , peu disponible mais souhaitant faire sa part de travail ,
+desorme robin, effacé mais vraiment d'un autre niveau en maths/programation,
+douylliez maxime, efficace mais inconstant.
+
+Le premier rendu est arrivé très vite, et la connaissance des membres du groupe avec. Nous nous sommes retrouvé avec un probléme évident de transport pour travailler en groupe ,avec nicolas qui était de garde a la caserne et robin qui était en difficulté avec le bus.On a réglé à ce moment le probleme en donnant du travail a part a nicolas et les membres du groupe restant nous sommes reunis sur msn et skype.
+
+ici déja , plus de trace de Guilllaume.
+
+Nous avons compris à ce moment la qu'il serait difficile de garder tout le monde dans le projet, Pas qu'il fallait se séparer des membres mais qu'il en manquerait de plus en plus a l'appel.
+
+nous pouvons affirmer en cette fin de projet que les raisons du désinteressement des membres pour le projet était d'ordre organisationelles: pas assé de rencontre avec le groupe ENTIER, aucune en faite. Le manque de motivation évident,  la difficulté d'allouer du temps a un projet lointain alors qu'il fallait rendre des travaux le lendemain ou le week end à venir.
+
+
+methode
+
+simulation coincidence date aniversaire.
+
+On suppose qu'il n'y a pas d'années bissextiles et que chaque dates sont èquiprobables,
+Si on prend une personne, la probabilité qu'elle est la même date qu'elle même est de 1
+car il y à  365 cas favorables/365 cas possibles,
+si on prend une deuxième personne il y auras 364 cas de disponible par rapport à la précédente, et si on rajoute une troisième personne , cette personne va donc avoir 363 dates de disponibles par rapport au deux autres personnes sur les 365 possibles...
+
+On pourrait croire que pour avoir une probabilité = 1 qu'il faudrait 365personnes dans une classe, cependant si on fait des tests avec différents palier d'élèves(10,20,30...) on s'apercoit qu'une fois arrivée à 50 personnes la probabilité devient très proche de 1.
+
+screen fournis algo encore a faire.
+
+calcul de la somme et du produit de deux fraction:
+soit a,b  c,d des entier relatifs
+ dns le cas de l'addition il faut trouver un dénominateur commun. on fait alors la multiplication du dénominateur et du numerateur par le dénominateur de l'autre fraction. (multiplication commutative = même resultat) . on peut ensuite additioner les deux numerateur.
+
+dans le cas de la multiplication il suffit de multiplier les numerateur ensembles puis les denominateur ensemble pour obtenir la nouvelle fraction
+
+Il faut ensuite reduire la fraction ainsi obtenu. On passe alors par la recherche du diviseur commun le plus grand afin d'obtenir la fraction la plus petite.
+
+algo a faire et screen fournis
+
+
+
+nature d'un triangle.
+
+Il existe une infinité de triangle différent, et parmis cette infinité se trouve des triangles particuliers.
+
+il existe le triangle rectangle dont l'un des coté est a 90 degrés. on utilise le theoreme de pythagore pour  démontrer qu'un triangle est rectangle.
+          le triangle isocele dont deux coté sont égaux  ou bien dont deux angles sont égaux.
+          le triangle équilatéral dont les trois angles sont egaux a 60 degres. 
+il existe d'autre triangles particulier que nous n'avons pas implanté.
+Il s'agit ici de calculer la longueur des coté afin de faire des calculs d'angle dans certain cas,ou des calculs de longueur.

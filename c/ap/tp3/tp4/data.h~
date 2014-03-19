@@ -1,0 +1,25 @@
+#include"ioap123.h"
+#include<assert.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+
+struct model{
+  char* nom;
+  char* prénom;
+  char* tel;
+  int age;};
+typedef struct model etudiant;
+
+typedef etudiant elt;
+
+
+
+
+int alea(int bmin,int bmax);
+candidat new_candidat();
+candidat new_candidat_al();
+void ajouter_txt(candidat ajouter,char* nom);
+void aff_candidat(candidat bartender);
+

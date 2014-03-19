@@ -1,0 +1,13 @@
+#include "ioap123.h"
+
+void afftrg(int n){
+  int a;
+for a=1}
+
+
+
+void afflgn(int n){
+  int a;
+
+  for(a=1;a<=n;a=a+1){
+    print_int(a);}}

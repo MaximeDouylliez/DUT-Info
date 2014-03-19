@@ -1,0 +1,153 @@
+void Cercle(){
+  print_char(" *** ");
+  print_newline();
+  print_char("* * *");
+  print_newline();
+  print_char(" *** ");
+  print_newline();
+}
+
+void trait(){
+  print_char("-----");
+}
+ 
+void circon(){
+  print_char("    ^");
+  print_newline()
+  print_char("   / \\");
+  print_newline()
+  print_char("  /   \\");
+  print_newline()
+  print_char(" /     \\");
+  print_newline()
+  print_char("/       \\");
+  print_newline()
+  trait();
+ print_newline();
+}
+
+void baleinobide(){
+print_char("___________z$");
+print_char("_________z$$F");
+print_newline()
+print_char("________d$$$");
+print_newline()
+print_char("_______$$$$$");
+print_newline()
+print_char("______J$$$$$");
+print_newline()
+print_char("______$$$$$$");
+print_newline()
+print_char("_____.$$$$$$");
+print_newline()
+print_char("_____$$$$$$$b");
+print_newline()
+print_char("____$$$$$$$$$c");
+print_newline()
+print_char("___J$$$$$$$$$$$c");
+print_newline()
+print_char("___$$$$_$$$$$$$$$$.");
+print_newline()
+print_char("__$$$$P____$*$$$$$$__________________.ze$$bc");
+print_newline()
+print_char("_.$$$$F___________________________z$$$$$$$$$$b");
+print_newline()
+print_char("_$$$$$_______________________.e$$$$$$$$$$$$$$$.");
+print_newline()
+print_char("_$$$$$_____________________z$$$$$$$$$$$$$""$$$$");
+print_newline()
+print_char("4$$$$$F__________________.$$$$$$$$$$$$$$$$ :bide $$$r");
+print_newline()
+print_char("$$$$$$$_______________z$$$$$$$$$$$$$$$$$$$$$$$$$");
+print_newline()
+print_char("$$$$$$$c____________e$$$$$$$$$$$$$$$$$$$$$$$$$$");
+print_newline()
+print_char("'$$$$$$$c_________.d$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+print_newline()
+print_char("_$$$$$$$$b_______d$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+print_newline()
+print_char("__*$$$$$$$$r_d$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+print_newline();
+}
+ 
+void parra(){
+  print_char("|                    |");
+  print_newline()
+  print_char("|                    |");
+  print_newline()
+  print_char("|                    |");
+  print_newline()
+  print_char("|                    |");
+  print_newline()
+  print_char("|                    |");
+}
+
+void triangle(){
+  circon();
+  print_newline()
+  trait();
+}
+
+
+void rectangle(){
+  trait();
+  trait();
+  trait();
+  trait();
+  print_newline()
+  parra();
+  trait()
+  trait();
+  trait();
+  trait();
+}
+
+void maison(){
+  triangle();
+  trait();
+  trait();
+  trait();
+  print_newline();
+  rectangle();
+}
+
+void mister(){
+  print_text("          ");
+  cercle();
+  print_newline();
+  print_text("           ");
+  print_char("| |");
+  print_newline();
+  print_text("         ");
+  print_char("|                    |");
+  print_newline(
+  print_text("         ");
+  print_char("|                    |");
+  print_newline()  
+  print_text("         ");
+  print_char("|                    |");
+  print_newline()
+  print_text("         ");
+  print_char("|                    |");
+  print_newline();
+  print_text("         ");
+  print_char("|                    |");
+ }
+
+    void cons(text ordre){
+    if(ordre== baleine){baleine();}
+    if(ordre== jambe){mister();}
+    if(ordre== trait){trait();}
+    if(ordre== rectangle){rectangle();}
+    if(ordre==triangle){triangle();}
+    if(ordre==cercle)[cercle();}
+  }
+
+
+    int main(){
+    text forme;
+    print_text("Bonjour! choisissez ce que souhaitez voir : ");
+    print_text("une maison? une baleine? un sans-jambe? un trait? un rectangle? un triangle? un cercle?");
+    print_text("tappez baleine, jambe, trait , rectangle, cercle, triangle,maison");
+    forme = readtext;
+					

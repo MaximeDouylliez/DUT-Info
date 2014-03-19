@@ -1,0 +1,4 @@
+#BlueJ class context
+comment0.params=type\ x1\ y1\ x2\ y2
+comment0.target=Type(java.lang.String,\ int,\ int,\ int,\ int)
+numComments=1

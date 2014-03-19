@@ -1,0 +1,11 @@
+int fonction_carre (int nombre)
+{
+  return nombre * nombre;
+}
+
+int fonction_carre(int nombre)
+{
+  int resultat;
+  resultat = nombre*nombre;
+  return resultat;
+}

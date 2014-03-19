@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Groupe()
+comment1.params=idJoueur\ largeur\ hauteur
+comment1.target=boolean\ isValide(int,\ int,\ int)
+comment2.params=idJoueur\ largeur\ hauteur
+comment2.target=boolean\ jouerCoup(int,\ int,\ int)
+comment3.params=
+comment3.target=int[][]\ getPlateau()
+numComments=4

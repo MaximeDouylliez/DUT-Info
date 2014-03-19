@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=bmin\ bmax
+comment0.target=ThrTri(int,\ int)
+comment1.params=
+comment1.target=void\ run()
+numComments=2

@@ -1,0 +1,54 @@
+global main
+extern printf
+extern scanf
+extern exit
+extern putchar
+	
+segment .data
+demande db "bonjour, un mot pour les pauvres: ",0h,0ah
+format db "%s",0
+format2 db "%d",0
+	
+segment .bss
+buff resb 20
+	
+segment .text
+main:
+
+	push dword demande
+	call printf
+	
+	push buff
+	push format
+	call scanf
+	
+	add esp,12
+
+
+	mov esi,buff
+	xor ebx,ebx
+	
+	
+empiler:
+	cmp dword [esi],0
+	je suite
+	push dword [esi]
+	inc esi
+	inc ebx
+	jmp empiler
+
+suite:	
+	dec esi
+	xor edx,edx
+afficher:
+	cmp ebx,0
+	je fin
+	call putchar
+	add esp,4 
+	dec ebx
+	jmp afficher
+
+fin:	
+
+push 0
+call exit

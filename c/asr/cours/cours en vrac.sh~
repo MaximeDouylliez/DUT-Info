@@ -1,0 +1,7 @@
+read -p " mettre la phrase ici" rep
+
+case $rep in
+o|O) echo oui;;    // c'est un case
+n|N) echo non;;
+*) echo indefini
+esac

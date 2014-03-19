@@ -1,0 +1,9 @@
+#include "client.h"
+
+struct cl{
+  int ha;
+  int hd;}
+
+  client creer_client(int ar
+
+

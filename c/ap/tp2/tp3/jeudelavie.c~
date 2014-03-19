@@ -1,0 +1,143 @@
+#include"ioap123.h"
+
+void  creation_damier (int LgnTab,int ColTab,int** Tab_Actu , int** Tab_Apre)
+{
+  int CptL;
+  
+  
+  
+  Tab_Actu=malloc(LgnTab * sizeof(int));
+  Tab_Apre=malloc(LgnTab * sizeof(int));
+  
+  for(CptL=0;CptL<LgnTab;CptL++)
+    {
+      Tab_Actu[CptL]=malloc(ColTab * sizeof(int));
+      Tab_Apre[CptL]=malloc(ColTab * sizeof(int));
+    }
+}
+
+void initialisation (int LgnTab, int ColTab,int** Tab1, int** Tab2)
+{
+  int x,y;
+  
+  for(y=0;y<LgnTab;y++)
+    {
+      for(x=0;x<ColTab;x++)
+	{
+	  Tab1[y][x]=0;
+	  Tab2[y][x]=0;
+	}
+    }
+}
+
+void tiret(int n)
+{
+  int i;
+  for(i=0;i<n;i++)
+    print_char('-');
+}
+
+void affiche (int LgnTab, int ColTab,int** Tab1)
+{
+  int y,x;
+
+  tiret(ColTab*2+1);
+
+  for(y=0;y<LgnTab;y++)
+    {
+      
+      print_newline();
+      print_char('|');
+      
+      for(x=0;x<ColTab;x++)
+	{
+	  if(Tab1[y][x]==1)
+	    print_char('*');
+	  else
+	    print_char(' ');
+	  
+	  print_char('|');
+	}
+      print_newline();
+      tiret(ColTab*2+1);
+    }
+}
+  
+
+
+
+
+
+
+
+void generation (int LgnTab, int ColTab,int** Tab1, int** Tab2)
+{
+  int x=0,y=0;
+
+
+  print_text("Bienvenue dans le systeme d'aide à la création de cellule :\n\n");
+  print_text("Veuillez indiquez à quelle position vous souhaitez inserer des cellules vivantes. (tapez x=-1 y=-1 pour terminer) \n\n");
+
+
+  while((x != -1) && (y != -1))
+    {
+      print_text("x= ? :");
+      print_int(1);
+      print_char('/');
+      print_int(ColTab);
+      print_text("  :");
+      x=read_int();
+
+      print_newline();
+      print_text("y= ? :");
+      print_int(1);
+      print_char('/');
+      print_int(LgnTab);
+      print_text("  :");
+      y=read_int();
+      print_text("\n\n");
+
+      if(Tab1[y-1][x-1]==0)
+	{
+	  Tab1[y-1][x-1]=1;
+	  Tab2[y-1][x-1]=1;
+	}
+      else
+	{
+	  Tab1[y-1][x-1]=0;
+	  Tab2[y-1][x-1]=0;
+	}
+
+
+      affiche (LgnTab,ColTab,Tab1);
+      print_text("\n\n");
+    }
+}
+
+int main ()
+{
+  int ColTab,LgnTab;
+  int ** Tab_Actu;
+  int ** Tab_Apre;
+  int CptL;
+  
+ 
+  print_text("lol");
+  ColTab=read_int();
+  LgnTab=read_int();
+  
+  Tab_Actu=malloc(LgnTab * sizeof(int));
+  Tab_Apre=malloc(LgnTab * sizeof(int));
+  
+  for(CptL=0;CptL<LgnTab;CptL++)
+    {
+      Tab_Actu[CptL]=malloc(ColTab * sizeof(int));
+      Tab_Apre[CptL]=malloc(ColTab * sizeof(int));
+    }
+
+
+  initialisation (LgnTab,ColTab,Tab_Actu,Tab_Apre);
+  generation (LgnTab,ColTab,Tab_Actu,Tab_Apre);
+
+  return 0;
+}

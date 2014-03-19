@@ -1,0 +1,17 @@
+filename=french.dic
+f = open(filename)
+
+n = 0
+for line in f:
+    n += 1
+
+f = open(filename)
+
+for k=0 >=n:
+    i=f.readline()
+    tableau[k]=i.strip()
+    print(tableau[k])
+
+
+
+

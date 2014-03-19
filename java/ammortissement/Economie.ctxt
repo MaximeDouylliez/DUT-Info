@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=fin\ taille
+comment0.target=Economie(javax.swing.JButton,\ int)
+comment1.params=
+comment1.target=java.util.ArrayList\ getCoef()
+numComments=2

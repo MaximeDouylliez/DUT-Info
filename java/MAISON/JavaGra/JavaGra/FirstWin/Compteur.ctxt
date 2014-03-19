@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=v\ d\ min\ max
+comment0.target=Compteur(int,\ int,\ int,\ int)
+comment1.params=
+comment1.target=int\ getVal()
+comment2.params=
+comment2.target=int\ getMin()
+comment3.params=
+comment3.target=int\ getMax()
+comment4.params=
+comment4.target=int\ degDef()
+comment5.params=
+comment5.target=void\ increment()
+comment6.params=
+comment6.target=void\ decrement()
+numComments=7

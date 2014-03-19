@@ -1,0 +1,51 @@
+	;; douylliez maxime
+global main
+
+	extern scanf
+	extern printf
+	extern exit
+
+segment .data
+annonce:	db "veuillez entrer un nombre au clavier",0ah,0h
+temp:	 db "le nombre est :",0h
+format:	 db "%d",0
+ligne:	 db " " ,0ah ,0h
+
+
+
+	
+segment .bss
+buff resd 1
+
+
+
+	
+segment .text
+main:
+
+	push dword annonce
+	call printf
+	push buff
+	push format
+	call scanf
+
+	mov ebx,[buff]
+afficher:
+	
+	push dword temp
+	call printf
+	push ebx
+	push format
+	call printf
+	push dword ligne
+	call printf
+	dec ebx
+
+	cmp ebx,-1
+	jg afficher
+
+	push 0
+	call exit
+	
+
+	

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=nom\ effet
+comment0.target=Objet(java.lang.String,\ int)
+comment0.text=\n\ construit\ un\ objet\n
+comment1.params=
+comment1.target=java.lang.String\ getNom()
+comment1.text=\n\ renvoie\ le\ nom\ de\ l'objet\n
+comment2.params=
+comment2.target=int\ getEffet()
+comment2.text=\n\ renvoie\ l'effet\ de\ l'objet\n
+numComments=3

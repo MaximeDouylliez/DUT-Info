@@ -1,0 +1,16 @@
+--2010-12-03 14:45:11--  http://google.fr/
+Résolution de google.fr... 74.125.230.82, 74.125.230.83, 74.125.230.84, ...
+Connexion vers google.fr|74.125.230.82|:80... connecté.
+requête HTTP transmise, en attente de la réponse... 301 Moved Permanently
+Emplacement: http://www.google.fr/ [suivant]
+--2010-12-03 14:45:11--  http://www.google.fr/
+Résolution de www.google.fr... 74.125.230.83, 74.125.230.84, 74.125.230.80, ...
+Réutilisation de la connexion existante vers google.fr:80.
+requête HTTP transmise, en attente de la réponse... 200 OK
+Longueur: non spécifié [text/html]
+Sauvegarde en : «index.html»
+
+     0K .........                                              69,7K=0,1s
+
+2010-12-03 14:45:12 (69,7 KB/s) - «index.html» sauvegardé [9612]
+

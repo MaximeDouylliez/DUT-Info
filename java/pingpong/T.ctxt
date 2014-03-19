@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=messss
+comment0.target=T(java.lang.String)
+comment1.params=a
+comment1.target=void\ setReady(boolean)
+comment2.params=
+comment2.target=java.lang.String[]\ get_list()
+comment3.params=
+comment3.target=void\ run()
+comment4.params=
+comment4.target=int\ get_index()
+numComments=5

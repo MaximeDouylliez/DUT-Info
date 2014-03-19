@@ -1,0 +1,137 @@
+global main
+extern printf
+extern scanf
+extern putchar
+extern exit
+
+segment .data
+
+msg: db "Le premier nombre ",0ah,0h
+msg2: db "le deuxieme nombre ",0ah,0h
+formatin: db "%d",0h
+menu1: db "1.addition",0ah,0h
+menu2: db "2.soustraction",0ah,0h
+menu3: db "3.division",0ah,0h
+
+segment .bss
+	nb1: resd 5
+	nb2: resd 5
+	rep: resd 5
+
+segment .text
+	main: 
+
+		push msg
+		call printf
+		add esp,4
+
+		push nb1
+		push formatin
+		call scanf
+		add esp,8
+
+		push msg2
+		call printf
+		add esp,4
+
+		push nb2
+		push formatin
+		call scanf
+		add esp,8
+
+		
+		push menu1
+		call printf
+		add esp,4
+		
+		push menu2
+		call printf
+		add esp,4
+
+		push menu3
+		call printf
+		add esp,4
+
+		push rep
+		push formatin
+		call scanf
+		add esp, 8
+
+		cmp rep,1
+		je l1
+		
+		cmp rep, 2
+		je l2
+
+		cmp rep, 3
+		je l3
+
+l1: 
+		call add
+		jmp fin
+l2:
+		call sous
+		jmp fin
+l3:
+		call div
+		jmp fin
+
+fin:
+	push 0
+	call exit
+
+add:
+		push ebp
+		mov ebp, esp
+
+
+		xor eax,eax
+
+		mov eax, [nb1]
+		add eax, [nb2]
+
+		push eax
+		push formatin
+		call printf
+		add esp,8
+
+		pop ebp
+		ret 		
+
+sous:
+		push ebp
+		mov ebp, esp
+
+
+		xor eax,eax
+
+		mov eax, [nb1]
+		sub eax, [nb2]
+
+		push eax
+		push formatin
+		call printf
+		add esp,8
+
+		pop ebp
+		ret 
+div:
+
+		push ebp
+		mov ebp, esp
+
+
+		xor eax,eax
+
+		mov eax, [nb1]
+		mov ebx, [nb2]
+		div ebx
+
+		push eax
+		push formatin
+		call printf
+		add esp,8
+
+		pop ebp
+		ret
+		

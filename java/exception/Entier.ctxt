@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=i
+comment0.target=Entier(int)
+comment1.params=
+comment1.target=int\ get()
+comment2.params=e
+comment2.target=void\ set(int)
+comment3.params=
+comment3.target=java.lang.Object\ clone()
+numComments=4

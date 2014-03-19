@@ -1,0 +1,53 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" >
+
+<head>
+<title>Formulaires</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="cv.css"/>
+</head>
+<body>
+  
+  
+  <form  method=POST action="php.php">
+    Premier formulaire.
+    <br/>
+    
+    Nom
+    <INPUT type=text name="nom"/>
+    
+    <br/>
+    Prenom
+    
+    <INPUT type=text name="prenom"/>
+    
+    <br/>
+    Semestre
+    <SELECT name="semestre">
+      <OPTION VALUE="S1">S1</OPTION>
+      <OPTION VALUE="S2">S2</OPTION>
+      <OPTION VALUE="S3">S3</OPTION>
+      <OPTION VALUE="S4">S4</OPTION>
+    </SELECT>
+    <br/>
+
+
+    
+    Semetre precedent validé ?
+    <INPUT type="checkbox" name="sem"/>
+    <br/>
+
+Moyenne ?
+<INPUT type="text" name="moysem"/>
+<br/>
+
+    Moyenne semestre courrant ?
+<INPUT type="text" name="moysemcour"/>
+<br/>
+
+    <INPUT type="submit" name="lol" value="Envoyer"/>
+  </FORM>
+</body>
+</html>

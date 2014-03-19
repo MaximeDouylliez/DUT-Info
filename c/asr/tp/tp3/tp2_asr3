@@ -1,0 +1,4 @@
+#!/bin/bash
+wget $1
+grep "href=" index.html| grep $1|cut -d ">" -f2|cut -d '"' -f 2|cut -d '/' -f 3|grep $1>univ-serv.txt
+

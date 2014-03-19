@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=f\ a\ b\ c\ d
+comment0.target=SaveForme(int,\ int,\ int,\ int,\ int)
+comment1.params=
+comment1.target=int\ getForme()
+comment2.params=
+comment2.target=int\ getCa()
+comment3.params=
+comment3.target=int\ getCb()
+comment4.params=
+comment4.target=int\ getCc()
+comment5.params=
+comment5.target=int\ getCd()
+numComments=6

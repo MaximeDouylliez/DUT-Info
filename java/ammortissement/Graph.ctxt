@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=doo\ eco\ s\ a\ b\ ccc
+comment0.target=Graph(java.util.ArrayList,\ java.util.ArrayList,\ Saisie,\ int,\ int,\ int)
+comment1.params=
+comment1.target=java.lang.Object[][]\ affLin()
+comment2.params=
+comment2.target=double\ total()
+comment3.params=
+comment3.target=java.lang.Object[][]\ affEco()
+comment4.params=
+comment4.target=java.lang.Object[][]\ affDegr()
+comment5.params=
+comment5.target=void\ lol()
+numComments=6

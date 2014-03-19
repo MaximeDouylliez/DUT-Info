@@ -1,0 +1,5 @@
+#!/bin/sh
+APPBASE="/home/nainsomniak/Documents/java/greenfoot"
+JAVAPATH="/usr/lib/jvm/java-6-openjdk"
+CP="$APPBASE/lib/bluej.jar:$JAVAPATH/lib/tools.jar"
+"$JAVAPATH/bin/java" -cp "$CP" bluej.Boot -greenfoot=true -bluej.compiler.showunchecked=false "$@"

@@ -1,0 +1,9 @@
+en masm on peut faire des procédures 
+
+add_val:
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+push ebp                              prologue de la fonction
+mov ebp,esp                           
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+quand on fait un call l'adresse de retour est push directement "@ret"

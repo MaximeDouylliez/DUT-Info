@@ -1,0 +1,11 @@
+#include "ioap123.h"
+
+
+
+int alea (int bmin, int bmax)
+{                                                           //creation d'une valeur aléatoire
+  int nombre;                                              //pour le choix du bot entre 1.2.3.4.5
+                                                          
+    nombre = bmin + rand() % (bmax - bmin + 1);
+    return nombre;
+}

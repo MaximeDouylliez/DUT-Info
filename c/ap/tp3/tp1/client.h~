@@ -1,0 +1,10 @@
+
+//type client comprenant son heure d'arrivée et son heure de départ
+
+struct c{
+  int ha;
+  int hd;
+}; typedef struct c client;
+
+
+

@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <unistd.h>
+
+
+typedef enum {croix,rond,vide}cell;
+
+typedef struct temp
+{
+  cell** plateau;
+} grille;
+
+grille get_grille(int tall){// renvois une grille composé de type énuméré de taille tall initialisé à 'vide'
+
+  grille res;
+  cell** tab;
+
+  tab=malloc(tall * sizeof(cell*));
+
+  for( int i=0 ; i<tall ; i++ )
+    {
+      tab[i]=malloc(tall * sizeof(cell));
+    }
+
+   res.plateau=tab;
+
+   return res;}
+
+void aff_grille(grille tab,int tall){// affiche une grille de taille tall
+
+
+
+  for( int i=0 ; i<tall ; i++)
+    {
+      for( int j= 0 ; j<tall ; j++ )
+	{}
+    }
+}
+
+
+
+
+
+  

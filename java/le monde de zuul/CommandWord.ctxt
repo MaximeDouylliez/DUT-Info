@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=stringDesc
+comment0.target=CommandWord(java.lang.String)
+comment1.params=aString
+comment1.target=CommandWord\ command(java.lang.String)
+comment1.text=\n\ Returns\ the\ CommandWord\ member\ matching\ the\ given\ String\ value,\ or\ null\n\ when\ the\ given\ String\ is\ either\ null\ or\ unknown.\n
+comment2.params=
+comment2.target=java.lang.String\ allCommands()
+comment2.text=\n\ Returns\ the\ list\ of\ all\ commands.\n
+numComments=3

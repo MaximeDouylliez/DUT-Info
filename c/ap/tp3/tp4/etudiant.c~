@@ -1,0 +1,10 @@
+
+
+struct model{
+  char* nom;
+  char* prenom;
+  char* tel;
+  int age;};
+typedef struct model etudiant
+
+
